@@ -2,7 +2,7 @@
 .dropdawn_wraper {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    /* align-items: center; */
 }
 
 
@@ -16,7 +16,7 @@
 .dropdawn .dropdawn_btn {
     padding: 15px 20px;
     background: whitesmoke;
-    box-shadow: 3px 3px 10px 6px rgba(0,0,0,0.6);
+    box-shadow: 3px 3px 10px 1px rgb(0 0 0 / 30%);
     font-weight: bold;
     color: black;
     display: flex;
@@ -31,7 +31,7 @@
     left: 0;
     padding: 20px;
     background: whitesmoke;
-    box-shadow: 3px 3px 10px 6px rgba(0,0,0,0.6);
+    box-shadow: 3px 3px 10px 1px rgb(0 0 0 / 30%);
     font-weight: bold;
     color: black;
     width: 100%;

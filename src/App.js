@@ -2,8 +2,7 @@ import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 import "./App.css";
 import Dropdawn from "./Components/Dropdawn/Dropdawn";
-import MainPage from "./Components/MainPage/MainPage"
-// import api from "./Pages/api.json"
+import MainPage from "./Components/MainPage/MainPage";
 
 function App() {
 
@@ -12,7 +11,6 @@ function App() {
     <BrowserRouter>
       <Route path="/" exact component={MainPage} />
       <Route path="/dropdawn" component={Dropdawn} />
-      {/* <Route path="/fakeapi" component={api}/> */}
     </BrowserRouter>
   );
 }
