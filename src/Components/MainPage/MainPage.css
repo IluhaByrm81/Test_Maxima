@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wraper {
+    border: 1px solid black;
+    max-width: 50%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.box_btn {
+    text-align: center;
+}
