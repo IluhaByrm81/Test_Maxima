@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { getData, getDataInfo } from "../../Api/api";
 import { Link } from "react-router-dom";
 import "./Dropdawn.css";
+import DropDawnTwo from "./DropDawnTwo";
 
 function Dropdawn() {
   const [activ, setActiv] = useState(false);
@@ -29,46 +30,42 @@ function Dropdawn() {
     }
   }, [dataInfo]);
 
+  const handleClickSelected = () => {
+    setActiv(!activ);
+  };
   const clickHandler = (name) => {
     setDataInfo(name);
   };
 
   return (
-    <div className="dropdawn_wraper">
-      <div className="dropdawn">
+    <div className="container">
+      <div className="dropdawn_wraper">
         <Link to="/">
-          {" "}
           <button className="btn_one">Назад</button>
         </Link>
-        <div className="dropdawn_btn" onClick={() => setActiv(!activ)}>
-          {"Покемоны"} : {dataInfo}
-          <span>&#9660;</span>
-        </div>
-        {activ && (
-          <div className="dropdawn_content">
-            {data.map((elem) => (
-              <div key={elem.name} className="dropdawn_item">
-                <div
-                  onClick={() => {
-                    clickHandler(elem.name);
-                    // setActiv(false);
-                  }}
-                >
-                  {elem.name.toUpperCase()}
+        <div className="dropdawn">
+          <div className="dropdawn_btn" onClick={handleClickSelected}>
+            {"Покемоны"} : {dataInfo}
+            <span>&#9660;</span>
+          </div>
+          {activ && (
+            <div className="dropdawn_content">
+              {data.map((elem) => (
+                <div key={elem.name} className="dropdawn_item">
+                  <div
+                    onClick={() => {
+                      clickHandler(elem.name);
+                      setActiv(false);
+                    }}
+                  >
+                    {elem.name}
+                  </div>
                 </div>
-              </div>
-            ))}
-          </div>
-        )}
-      </div>
-      <div className="dropdawn">
-        {currentInfo ? (
-          <div className="dropdawn_content">
-            <div className="dropdawn_item">Имя : {currentInfo.name}</div>
-            <div className="dropdawn_item">Рост : {currentInfo.height} см</div>
-            <div className="dropdawn_item">Вес : {currentInfo.weight} кг</div>
-          </div>
-        ) : null}
+              ))}
+            </div>
+          )}
+        </div>
+        <DropDawnTwo currentInfo={currentInfo} />
       </div>
     </div>
   );

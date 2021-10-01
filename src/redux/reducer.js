@@ -1,11 +1,6 @@
-// стартовое состояние
+import { combineReducers } from "redux";
+import { mainPageReducer } from "./mainpage/reducers";
 
-const initialState = {
-  modalOne: false,
-  modalTwo: false,
-  view: true,
-};
-
-export function reducer(state = initialState, action) {
-  return state;
-}
+export default combineReducers({
+  mainpage: mainPageReducer,
+});

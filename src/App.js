@@ -5,8 +5,6 @@ import Dropdawn from "./Components/Dropdawn/Dropdawn";
 import MainPage from "./Components/MainPage/MainPage";
 
 function App() {
-
-
   return (
     <BrowserRouter>
       <Route path="/" exact component={MainPage} />

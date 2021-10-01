@@ -4,12 +4,13 @@ body {
 }
 
 .wraper {
-    border: 1px solid black;
+    display: flow-root;
     max-width: 50%;
+    max-height: 100%;
     margin: auto;
     margin-top: 50px;
-}
-
-.box_btn {
-    text-align: center;
+    border-radius: 10px;
+    background-color: #f4d4a9;
+    box-shadow: 3px 3px 10px 1px rgb(0 0 0 / 30%);
+    background: linear-gradient(90deg, #f598a8, #f6edb2);
 }

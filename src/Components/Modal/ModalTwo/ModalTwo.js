@@ -1,20 +1,29 @@
 import React from "react";
 
-function ModalTwo(props) {
-  const { setModalTwo, setView } = props;
+function ModalTwo({ setModalTwo, setView }) {
+    
+  const handleClickModalTwoAlert = () => {
+    setModalTwo(alert("Ok"));
+  };
+
+  const handleChangeView = () => {
+    setView(false);
+  };
+
+  const handleClickModalTwoClose = () => {
+    setModalTwo(false);
+  };
+
   return (
     <>
-      <button className="modal_open" onClick={() => setModalTwo(alert("Ok"))}>
-        Кнопка 1
+      <button className="modal_open" onClick={handleClickModalTwoAlert}>
+        Кнопка 1 (Alert)
       </button>
-      <button className="modal_close" onClick={() => setModalTwo(alert("Ok"))}>
-        Кнопка 2
+      <button className="modal_close" onClick={handleChangeView}>
+        Кнопка 2 (ChangeView)
       </button>
-      <button className="modal_close" onClick={() => setView(false)}>
-        Кнопка 3
-      </button>
-      <button className="modal_close" onClick={() => setModalTwo(false)}>
-        Отмена
+      <button className="modal_close" onClick={handleClickModalTwoClose}>
+        Close
       </button>
     </>
   );
