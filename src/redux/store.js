@@ -1,5 +1,7 @@
-import { createStore } from "redux";
+// import { dataReducer } from "./reducer";
+// import { composeWithDevTools } from "redux-devtools-extension";
+// import thunk from "redux-thunk";
+import {createStore } from "redux";
+import rootReducer from "../redux/reducer"
 
-import { reducer } from "./reducer";
-
-export const store = createStore(reducer);
+export const store = createStore(rootReducer);

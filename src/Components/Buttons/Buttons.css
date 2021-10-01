@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&family=Poppins:ital@1&display=swap');
+
+
+.box_btn {
+    text-align: center;
+    padding: 15px;
+}
+
+.btn_one, .btn_two {
+    margin: 10px;
+    padding: 20px;
+    width: 180px;
+    height: 60px;
+    font-weight: bold;
+    font-family: 'Nanum Gothic';
+    letter-spacing: 0.8px;
+    font-size: 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(99, 99, 226);
+    color: black;
+    cursor: pointer;
+}
+
+.btn_one:hover, .btn_two:hover {
+    box-shadow: 3px 3px 10px 1px rgb(0 0 0 / 30%);
+}
+
