@@ -5,7 +5,7 @@ import ModalOne from "../Modal/ModalOne/ModalOne";
 import ModalTwo from "../Modal/ModalTwo/ModalTwo";
 import ButtonOne from "../Buttons/ButtonOne";
 import ButtonTwo from "../Buttons/ButtonTwo";
-import "./MainPage.css";
+import "./MainPage.scss";
 
 function MainPage() {
   const [modalOne, setModalOne] = useState(false);

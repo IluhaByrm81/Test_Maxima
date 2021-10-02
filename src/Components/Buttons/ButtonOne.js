@@ -1,5 +1,5 @@
 import React from "react";
-import "./Buttons.css";
+import "./Buttons.scss";
 
 function ButtonOne(props) {
   const { setModalOne, setModalTwo } = props;
@@ -14,12 +14,8 @@ function ButtonOne(props) {
 
   return (
     <div className="box_btn">
-      <button className="btn_one" onClick={handelClickModalOne}>
-        Кнопка 1
-      </button>
-      <button className="btn_two" onClick={handelClickModalTwo}>
-        Кнопка 2
-      </button>
+      <button onClick={handelClickModalOne}>Кнопка 1</button>
+      <button onClick={handelClickModalTwo}>Кнопка 2</button>
     </div>
   );
 }

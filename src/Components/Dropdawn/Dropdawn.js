@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { getData, getDataInfo } from "../../Api/api";
 import { Link } from "react-router-dom";
-import "./Dropdawn.css";
+import "./Dropdawn.scss";
 import DropDawnTwo from "./DropDawnTwo";
 
 function Dropdawn() {

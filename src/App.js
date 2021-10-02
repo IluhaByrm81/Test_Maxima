@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
-import "./App.css";
+import "./App.scss";
 import Dropdawn from "./Components/Dropdawn/Dropdawn";
 import MainPage from "./Components/MainPage/MainPage";
 
