@@ -1,7 +1,8 @@
 import React from "react";
-import "./Modal.scss";
+import "../Modal.scss";
 
-function Modal({ isOpened, children }) {
+export const Modal = ({ isOpened, children }) => {
+   
     
   return (
     <div className={`modal_wraper ${isOpened ? "open" : "close"}`}>
@@ -9,4 +10,3 @@ function Modal({ isOpened, children }) {
     </div>
   );
 }
-export default Modal;
