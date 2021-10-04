@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Buttons.scss";
+import "../Buttons.scss";
 
-function ButtonTwo() {
+export const ButtonTwo = () => {
   return (
     <div className="box_btn">
       <button> Кнопка 3</button>
@@ -13,4 +13,3 @@ function ButtonTwo() {
     </div>
   );
 }
-export default ButtonTwo;
